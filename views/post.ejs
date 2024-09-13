@@ -1,0 +1,33 @@
+<%- include("partials/header.ejs") %>
+
+<div class="main-posts">
+    <div class="posts-container">
+        <h1 class="">BLOG POSTS</h1>
+        <div class="posts">
+            <% if (blogs && blogs.length > 0) { %>
+                <% blogs.forEach(function(blog, index) { %>
+                    <div class="post">
+                        <h2><%= blog.title %></h2>
+                        <p class="category">Category: <%= blog.category %></p>
+                        <p class="content"><%= blog.content.substring(0, 200) %>...</p>
+                        <p class="author">By: <%= blog.author %></p>
+                        <a href="/post/<%= index + ((currentPage - 1) * 4) %>" class="read-more">Read More</a>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <p>No posts available</p>
+            <% } %>
+        </div>
+
+        <div class="pagination">
+            <% if (currentPage > 1) { %>
+                <a href="/post?page=<%= currentPage - 1 %>" class="prev">Previous</a>
+            <% } %>
+            <% if (currentPage < totalPages) { %>
+                <a href="/post?page=<%= currentPage + 1 %>" class="next">Next</a>
+            <% } %>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") %>

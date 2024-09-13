@@ -1,0 +1,43 @@
+<%- include("partials/header.ejs") %>
+
+<div class="main">
+    <div class="form-container">
+        <h1>Create a New Blog Post</h1>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <input type="text" name="category" id="category" required>
+            </div>
+            <div class="form-group">
+                <label for="content">Content</label>
+                <textarea name="content" id="content" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="main-btn submit-btn">
+            </div>
+        </form>
+    </div>
+</div>
+
+<% if (typeof success !== 'undefined' && success) { %>
+    <div id="popup" class="popup">
+        <h2>Success!</h2>
+        <p>Your blog post has been successfully published.</p>
+        <button id="close-popup" class="btn btn-light">Close</button>
+    </div>
+    <script>
+        document.getElementById('close-popup').addEventListener('click', function() {
+            document.getElementById('popup').style.display = 'none';
+        });
+    </script>
+<% } %>
+
+<%- include("partials/footer.ejs") %>

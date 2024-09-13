@@ -1,0 +1,229 @@
+@media only screen and (max-width: 1200px) {
+    .container1 {
+        grid-template-columns: 1fr;
+    }
+
+    .second {
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .form-container, .posts-container, .post-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .bg, .main, .main-posts, .main-detail, .main-contact {
+        padding: 10px;
+        height: auto;
+    }
+
+    .first {
+        align-items: center;
+        text-align: center;
+    }
+
+    .first h1, .first p {
+        font-size: 18px;
+    }
+
+    .main-btn {
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+    }
+
+    .tilted-image {
+        width: 200px;
+    }
+
+    .posts {
+        grid-template-columns: 1fr;
+    }
+
+    .post h2 {
+        font-size: 18px;
+    }
+
+    .post .content {
+        font-size: 16px;
+    }
+
+    .pagination a {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .post-container h1 {
+        font-size: 24px;
+    }
+
+    .back-to-posts {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .contact-form h1 {
+        font-size: 24px;
+    }
+
+    .form-group input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .first h1 {
+        font-size: 16px;
+    }
+
+    .first p {
+        font-size: 14px;
+    }
+
+    .main-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .tilted-image {
+        width: 150px;
+    }
+
+    .form-container, .posts-container, .post-container {
+        padding: 15px;
+    }
+
+    .post h2 {
+        font-size: 16px;
+    }
+
+    .post .content {
+        font-size: 14px;
+    }
+
+    .pagination a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .post-container h1 {
+        font-size: 20px;
+    }
+
+    .back-to-posts {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form h1 {
+        font-size: 20px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+    }
+
+    .form-group input[type="submit"] {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .popup button {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .popup {
+        width: 90%;
+    }
+
+    .popup h2 {
+        font-size: 20px;
+    }
+
+    .popup p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .container1 {
+        grid-template-columns: 1fr;
+    }
+
+    .second {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first h1 {
+        font-size: 20px;
+    }
+
+    .first p {
+        font-size: 16px;
+    }
+
+    .main-btn {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .tilted-image {
+        width: 180px;
+    }
+
+    .form-container, .posts-container, .post-container {
+        width: 85%;
+        padding: 20px;
+    }
+
+    .post h2 {
+        font-size: 18px;
+    }
+
+    .post .content {
+        font-size: 16px;
+    }
+
+    .pagination a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .post-container h1 {
+        font-size: 22px;
+    }
+
+    .back-to-posts {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .contact-form {
+        width: 70%;
+    }
+
+    .contact-form h1 {
+        font-size: 22px;
+    }
+
+    .form-group input[type="submit"] {
+        width: 80%;
+        font-size: 18px;
+    }
+}

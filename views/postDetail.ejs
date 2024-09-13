@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+
+<div class="main-detail">
+    <div class="post-container">
+        <h1 class=""><%= blog.title %></h1>
+        <p class="category">Category: <%= blog.category %></p>
+        <p class="content">► <%= blog.content %></p>
+        <p class="author">By: <%= blog.author %></p>
+        <p class="date">Published on: <%= new Date(blog.date).toLocaleDateString() %></p>
+        <a href="/post" class="back-to-posts">Back to Posts</a>
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") %>
